@@ -9,6 +9,15 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </head>
 <body>
-       
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Crud</h2>
+            </div>
+            <div>
+                <a href="{{route('companies.create')}}" class="btn btn-success">Create Company</a>
+            </div>
+        </div>
+    </div>   
 </body>
 </html>
