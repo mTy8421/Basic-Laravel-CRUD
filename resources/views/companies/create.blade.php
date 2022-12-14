@@ -26,7 +26,7 @@
             <form action="{{route('companies.store')}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 mt-3">
                         <div class="form-group">
                             <strong>Company Email</strong>
                             <input type="text" name="email" class="form-control" placeholder="Company Email">
@@ -35,7 +35,7 @@
                             @enderror
                         </div>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12 mt-3">
                         <div class="form-group">
                             <strong>Company Name</strong>
                             <input type="text" name="name" class="form-control" placeholder="Company Name">
@@ -44,7 +44,7 @@
                             @enderror
                         </div>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12 mt-3">
                         <div class="form-group">
                             <strong>Company Address</strong>
                             <input type="text" name="address" class="form-control" placeholder="Company Address">
@@ -53,7 +53,9 @@
                             @enderror
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                    </div>
                 </div>
             </form>
         </div>
