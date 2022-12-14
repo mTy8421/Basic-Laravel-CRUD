@@ -14,6 +14,9 @@
             <div class="col-lg-12">
                 <h2> Add Company</h2>
             </div>
+            <div>
+                <a href="{{route('companies.index')}}" class="btn btn-primary">Back</a>
+            </div>
         </div>
     </div>
 </body>
