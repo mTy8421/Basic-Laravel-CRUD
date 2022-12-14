@@ -28,9 +28,27 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
+                            <strong>Company Email</strong>
+                            <input type="text" name="email" class="form-control" placeholder="Company Email">
+                            @error('email')
+                                <div class="alert alert-danger">{{$message}}</div>
+                            @enderror
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
                             <strong>Company Name</strong>
                             <input type="text" name="name" class="form-control" placeholder="Company Name">
                             @error('name')
+                                <div class="alert alert-danger">{{$message}}</div>
+                            @enderror
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <strong>Company Address</strong>
+                            <input type="text" name="address" class="form-control" placeholder="Company Address">
+                            @error('address')
                                 <div class="alert alert-danger">{{$message}}</div>
                             @enderror
                         </div>
