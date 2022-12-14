@@ -23,7 +23,12 @@
                     {{ session('status') }}
                 </div>
             @endif
-            
+            <form action="{{route('companies.store')}}" method="POST" enctype="multipart/form-data">
+                @csrf
+                <div class="row">
+                    
+                </div>
+            </form>
         </div>
     </div>
 </body>
