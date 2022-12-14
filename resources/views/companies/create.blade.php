@@ -29,6 +29,10 @@
                     <div class="col-md-12">
                         <div class="form-group">
                             <strong>Company Name</strong>
+                            <input type="text" name="name" class="form-control" placeholder="Company Name">
+                            @error('name')
+                                <div class="alert alert-danger">{{$message}}</div>
+                            @enderror
                         </div>
                     </div>
                 </div>
