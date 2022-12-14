@@ -26,7 +26,11 @@
             <form action="{{route('companies.store')}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="row">
-                    
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <strong>Company Name</strong>
+                        </div>
+                    </div>
                 </div>
             </form>
         </div>
