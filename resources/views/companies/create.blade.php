@@ -17,6 +17,13 @@
             <div>
                 <a href="{{route('companies.index')}}" class="btn btn-primary">Back</a>
             </div>
+
+            @if (session('status'))
+                <div class="alert alert-success">
+                    {{ session('status') }}
+                </div>
+            @endif
+            
         </div>
     </div>
 </body>
