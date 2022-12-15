@@ -31,5 +31,11 @@ class CompanyCRUDController extends Controller
             'email' => 'required',
             'address' => 'required'
         ]);
+
+        $company = new Company();
+        $company->name = $request->name;
+        $company->email = $request->email;
+        $company->address = $request->address;
+        $company->save();
     }
 }
