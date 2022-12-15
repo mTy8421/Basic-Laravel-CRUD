@@ -38,6 +38,6 @@ class CompanyCRUDController extends Controller
         $company->address = $request->address;
         $company->save();
 
-        return redirect()->route('company.index')->with('success', 'company');
+        return redirect()->route('company.index')->with('success', 'company is success');
     }
 }
